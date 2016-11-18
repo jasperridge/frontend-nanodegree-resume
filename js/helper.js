@@ -55,7 +55,7 @@ var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<br><a href="#">%data%</a>';
 
-var internationalizeButton = '<button>Internationalize</button>';
+var internationalizeButton = '<button id="interBtn">Internationalize</button>';
 var googleMap = '<div id="map"></div>';
 
 
@@ -80,7 +80,7 @@ function logClicks(x, y) {
     x: x,
     y: y
   });
-  console.log('x location: ' + x + '; y location: ' + y);
+  //console.log('x location: ' + x + '; y location: ' + y);
 }
 
 $(document).click(function(loc) {
