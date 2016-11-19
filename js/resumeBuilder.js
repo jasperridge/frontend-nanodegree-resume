@@ -26,19 +26,19 @@ var education = {
     'url': 'http://udacity.com'
   }],
   'schools': [{
-    'city': 'Palo Alto',
+    'location': 'Palo Alto',
     'dateOfGraduation': '1999',
     'major': ['Anthropology'],
     'name': 'Stanford University',
     'onlineCourseInfo': 'http://stanford.edu'
   }, {
-    'city': 'Oxford, England',
+    'location': 'Oxford, England',
     'dateOfGraduation': '1999',
     'major': ['Creative Writing'],
     'name': 'Oxford University',
     'onlineCourseInfo': 'http://oxford.edu'
   }, {
-    'city': 'Minneapolis, Minnesota',
+    'location': 'Minneapolis, Minnesota',
     'dateOfGraduation': '1995',
     'major': ['In Place of High School'],
     'name': 'University of Minnesota, Twin Cities',
@@ -48,32 +48,38 @@ var education = {
 
 var work = {
   'jobs': [{
-    'city': 'San Francisco',
+    'location': 'San Francisco',
     'description': 'Using a hybrid Kanban model, we break down our sprints based on your requirements for deliverables. This allows us to move efficiently while layering a more traditional project approach to work with you more effectively. We build mobile and web apps with proven open source technologies as much as possible to minimize technology transfer snafus, keep costs down, and limit obsolescence of the infrastructure.',
     'employer': 'CoMedia Design',
     'position': 'Senior Engineer',
     'years': '2016-presnt'
   }, {
-    'city': 'San Francisco',
+    'location': 'San Francisco',
     'description': 'SolutionSet is now part of Epsilon. SolutionSet is a digital consultancy. We design and develop web, mobile, social and digital marketing solutions to help leading companies better engage and serve customers. Development and maintenance on company public and private, client-facing portals:  ordering and reporting systems; DNA translation services; laboratory information system integration.  Implementation of new corporate site: sgidna.com.',
     'employer': 'Epsilon, LLC',
     'position': 'Senior Web Developer',
     'years': '2014-2016'
   }, {
-    'city': 'San Diego',
+    'location': 'San Diego',
     'description': 'Development and maintenance on company public and private, client-facing portals:  ordering and reporting systems; DNA translation services; laboratory information system integration.  Implementation of new corporate site: sgidna.com.',
     'employer': 'SGI-DNA',
     'position': 'Senior Web Developer, consultant',
     'years': '2012-2014'
+  }, {
+    'location': 'McMurdo Station, Antarctica',
+    'description': 'Keep the power running in the largest research station on the Ice.',
+    'employer': 'U.S. Antarctic Program',
+    'position': 'Power plant operator, Operations Manager assistant',
+    'years': '2012-2014'
   }],
   'volunteer': [{
-    'city': 'Palo Alto',
+    'location': 'Palo Alto',
     'description': 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
     'org': 'Stanford Pride',
     'position': 'Volunteer',
     'years': '2014-2016'
   }, {
-    'city': 'San Diego',
+    'location': 'San Diego',
     'description': 'Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...',
     'employer': 'SD Pride',
     'position': 'Volunteer',
@@ -206,3 +212,5 @@ if (bio.skills.length !== 0) {
     $('#skills').append(formattedSkill);
   });
 }
+
+$('#mapDiv').append(googleMap);
